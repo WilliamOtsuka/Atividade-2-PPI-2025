@@ -1,0 +1,174 @@
+:root {
+    --primary-bg: #22273f;
+    --container-bg: #2a234a;
+    --input-bg: #1f1a33;
+    --input-border: #453a60;
+    --primary-color: #f4f4f4;
+    --label-color: #e0e0e0;
+    --highlight: #a647ff;
+    --highlight-light: #d080ff;
+    --container-radius: 12px;
+    --input-radius: 6px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.18);
+    --font-main: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-bg);
+    font-family: var(--font-main);
+    color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.container {
+    background: var(--container-bg);
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: var(--container-radius);
+    box-shadow: var(--shadow);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 2rem;
+    color: var(--highlight);
+    letter-spacing: 1px;
+}
+
+.formulario .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--label-color);
+}
+
+.input,
+.select,
+.textarea {
+    padding: 9px 12px;
+    border: 1px solid var(--input-border);
+    border-radius: var(--input-radius);
+    background: var(--input-bg);
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    border-color: var(--highlight);
+    outline: none;
+}
+
+.select {
+    cursor: pointer;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.botao {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, var(--highlight) 0%, var(--highlight-light) 100%);
+    color: var(--container-bg);
+    border: none;
+    border-radius: var(--input-radius);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.botao:hover {
+    background: linear-gradient(90deg, var(--highlight-light) 0%, var(--highlight) 100%);
+    color: #181c2f;
+}
+
+@media (max-width: 540px) {
+    .container {
+        padding: 18px 8px 16px 8px;
+        max-width: 98vw;
+    }
+    .titulo {
+        font-size: 1.3rem;
+    }
+}
+
+.box {
+    background: var(--container-bg);
+    border-radius: var(--container-radius);
+    box-shadow: var(--shadow);
+    padding: 28px 22px 20px 22px;
+    max-width: 420px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: left;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.box .titulo {
+    margin-bottom: 18px;
+    color: var(--highlight);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.box p {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.box strong {
+    color: var(--highlight-light);
+}
+
+.box .btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 22px;
+    background: linear-gradient(90deg, var(--highlight) 0%, var(--highlight-light) 100%);
+    color: var(--container-bg);
+    border: none;
+    border-radius: var(--input-radius);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.box .btn:hover {
+    background: linear-gradient(90deg, var(--highlight-light) 0%, var(--highlight) 100%);
+    color: #181c2f;
+}
+
+@media (max-width: 540px) {
+    .box {
+        padding: 14px 6px 12px 6px;
+        max-width: 98vw;
+    }
+    .box .titulo {
+        font-size: 1.1rem;
+    }
+}
