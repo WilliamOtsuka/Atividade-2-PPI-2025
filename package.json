@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "atividade-2---ppi",
+  "version": "1.0.0",
+  "description": "Atividade 2 PPI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamOtsuka/Atividade-2-PPI-2025.git"
+  },
+  "author": "William Otsuka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilliamOtsuka/Atividade-2-PPI-2025/issues"
+  },
+  "homepage": "https://github.com/WilliamOtsuka/Atividade-2-PPI-2025#readme"
+}
